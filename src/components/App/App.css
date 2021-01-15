@@ -13,3 +13,8 @@
   font-size: 1.5em;
 }
 
+.App img {
+  height: 150px;
+  width: 150px;
+}
+
