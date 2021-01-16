@@ -36,8 +36,6 @@ function App() {
       <GalleryList
         galleryList={galleryList} // also needs put route 
       />
-      <p>Gallery goes here</p>
-      <img src="images/ayinger-brauWeisse.jpg" />
     </div>
   );
 }
