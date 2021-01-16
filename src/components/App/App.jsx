@@ -9,7 +9,7 @@ function App() {
   const [galleryList, setGalleryList] = useState([]);
 
 
-  //routes
+  //get data 
   const getGalleryList = () => {
     axios({
       method: 'GET',
@@ -22,8 +22,8 @@ function App() {
       console.log('error on get: ', error);
     })
   }
-  //put route
 
+  //put route for adding likes
   const changeLikes = (beerId) => {
      const id = beerId;
      console.log('put req with:' , id);
@@ -37,6 +37,7 @@ function App() {
     })
   }
 
+  // populate dom on component load
   useEffect(() => {
     getGalleryList();
   }, [])
