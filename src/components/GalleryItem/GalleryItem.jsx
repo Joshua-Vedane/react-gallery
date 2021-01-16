@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './GalleryItem.css';
 export default function GalleryItem({ beer, changeLikes }) {
 
   //hook for view toggle img/description
@@ -30,14 +31,16 @@ export default function GalleryItem({ beer, changeLikes }) {
 
   return (
     <>
-      <div className="item-container">
-        <div className="item-display" onClick={handleToggleView}>
+    
+      <div className="col mx-auto item-container">
+        <div className="item-display d-flex align-items-center justify-content-center mx-auto " onClick={handleToggleView}>
           {displayToggleView()}
         </div>
-        <button onClick={handleLikeClick} className="likeBtn btn">Love It!</button>
+        <button onClick={handleLikeClick} className="likeBtn btn-dark">Love It!</button>
         <p>{beer.likes} people love this!</p>
       </div>
 
+    
     </>
 
 

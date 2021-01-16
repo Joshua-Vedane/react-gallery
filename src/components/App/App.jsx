@@ -37,10 +37,6 @@ function App() {
     })
   }
 
-
-
-
-
   useEffect(() => {
     getGalleryList();
   }, [])
