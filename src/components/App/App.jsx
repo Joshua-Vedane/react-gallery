@@ -24,6 +24,23 @@ function App() {
   }
   //put route
 
+  const changeLikes = (beerId) => {
+     const id = beerId;
+     console.log('put req with:' , id);
+    axios({
+      method: 'PUT',
+      url: `/gallery/like/${id}`
+    }).then((response) =>{
+      getGalleryList();
+    }).catch((error) => {
+      console.log('error in PUT', error);
+    })
+  }
+
+
+
+
+
   useEffect(() => {
     getGalleryList();
   }, [])
@@ -34,7 +51,8 @@ function App() {
         <h1 className="App-title">Galerie Deutsches Bier</h1>
       </header>
       <GalleryList
-        galleryList={galleryList} // also needs put route 
+        galleryList={galleryList} 
+        changeLikes ={changeLikes} 
       />
     </div>
   );
