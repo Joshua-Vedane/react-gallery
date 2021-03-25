@@ -2,8 +2,12 @@
 
 ## Description
 _Duration: weekend project
+Completed: 17 January 2021
 
-This is a Javascript image gallery app with the front end built with React. Images and data are stored locally in the server but are routed to the front end. Clicking on an image will change the display to a description of the image. Clicking on the like button will add likes to the desired image. 
+This is a German beer image gallery React app. Images and data are stored locally in the server but are routed to the front end. Clicking on an image will change the display to a description of the image. Clicking on the like button will add likes to the desired image. 
+
+This is the first React app I have built. 
+In the future I would like to be able to implement a database to store the information and also be able to add/remove beers from the list. 
 
 ## Installation
 1. Open up the file in your editor of choice and run 'npm install' in the terminal. 
@@ -18,3 +22,5 @@ Node
 Express
 postgreSQL
 Bootstrap
+
+

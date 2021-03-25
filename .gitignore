@@ -23,3 +23,6 @@ yarn-error.log*
 .eslintcache
 
 todos.md
+INSTRUCTIONS.md
+####
+package-lock.json

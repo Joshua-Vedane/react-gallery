@@ -11,7 +11,7 @@ Running the server code requires `nodemon`. If you don't already have `nodemon`,
 ```
 npm install
 npm run server
-```
+``` 
 
 Now that the server is running, open a new terminal tab with `cmd + t` and start the react client app.
 
